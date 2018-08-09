@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for alexa-skill-fuelking/server.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">alexa-skill-fuelking/</a> server.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/16</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
+<span class="cstat-no" title="statement not covered" >var express = require('express');</span>
+<span class="cstat-no" title="statement not covered" >var bodyParser = require('body-parser');</span>
+<span class="cstat-no" title="statement not covered" >var alexaVerifier = require('alexa-verifier');</span>
+<span class="cstat-no" title="statement not covered" >var fuelkingSkill = require('./js/fuelking-alexa-skill/fuelking-skill.js');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >var app = express();</span>
+&nbsp;
+&nbsp;
+/*
+Verifying Requests
+Next step is an annoying one, but necessary if you plan to certify your skill and publish it.
+In order to pass certification, your application (skill) must verify that each
+and every request actually came from Amazon and is valid. This process is not short:
+&nbsp;
+1.    Check the SignatureCertChainUrl header for validity.
+2.    Retrieve the certificate file from the SignatureCertChainUrl header URL.
+3.    Check the certificate file for validity (PEM-encoded X.509).
+4.    Extract the public key from certificate file.
+5.    Decode the encrypted Signature header (it's base64 encoded).
+6.    Use the public key to decrypt the signature and retrieve a hash.
+7.    Compare the hash in the signature to a SHA-1 hash of entire raw request body.
+8.    Check the timestamp of request and reject it if older than 150 seconds.
+&nbsp;
+*/
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >function requestVerifier(req, res, next) {</span></span>
+<span class="cstat-no" title="statement not covered" >    alexaVerifier(</span>
+        req.headers.signaturecertchainurl,
+        req.headers.signature,
+        req.rawBody,
+<span class="fstat-no" title="function not covered" >        function verificationCallback(err) {</span>
+<span class="cstat-no" title="statement not covered" >            if (err) {</span>
+<span class="cstat-no" title="statement not covered" >                res.status(401).json({ message: 'Verification Failure', error: err });</span>
+            } else {
+<span class="cstat-no" title="statement not covered" >                next();</span>
+            }
+        }
+    );
+}
+&nbsp;
+&nbsp;
+&nbsp;
+//configure middleware
+<span class="cstat-no" title="statement not covered" >app.use(bodyParser.json({</span>
+    verify: <span class="fstat-no" title="function not covered" >function getRawBody(req, res, buf) {</span>
+        //raw body is already parsed
+<span class="cstat-no" title="statement not covered" >        req.rawBody = buf.toString();</span>
+    }
+}));
+&nbsp;
+//FOR LOCAL DEBUG ONLY
+//app.use(bodyParser.json())
+&nbsp;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >app.post('/alexa/skill/fuelking', requestVerifier, <span class="fstat-no" title="function not covered" >function(req,res){</span></span>
+<span class="cstat-no" title="statement not covered" >    fuelkingSkill.processAlexaRequest(req, <span class="fstat-no" title="function not covered" >function sendResponseToAmazon(speechResponse){</span></span>
+<span class="cstat-no" title="statement not covered" >        res.json(speechResponse);</span>
+    });
+});
+&nbsp;
+&nbsp;
+//listening on cloud port
+<span class="cstat-no" title="statement not covered" >app.listen(process.env.PORT || 3000, <span class="fstat-no" title="function not covered" >function () {</span></span>
+});
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Jun 08 2017 13:35:32 GMT+0200 (CEST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

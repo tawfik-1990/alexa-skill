@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for alexa-skill-fuelking/js/fuelking-alexa-skill/fuelking-skill-intents.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">alexa-skill-fuelking/js/fuelking-alexa-skill/</a> fuelking-skill-intents.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">76.92% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>30/39</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">70% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>7/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">76.92% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>30/39</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var fuelkingHelper = require('./fuelking-skill-helper.js');
+var fuelkingConnections = require('./fuelking-skill-connections.js');
+&nbsp;
+/*
+&nbsp;
+*/
+module.exports.createAlexaSpeechResponseByIntent = function(intentName, slots, returnResponse) {
+  var responseSpeechJSON;
+&nbsp;
+    /*
+     If this switch contains more than five items, it should be implemented
+     using a lookup table or a hash table/ list.
+     This means that all items get the same access time,
+     compared to a list of if-else where the last item takes
+     much more time to reach as it has to evaluate every previous condition first..
+    */
+      switch(intentName) {
+        case 'BestStationInZip': //Welche Tankstelle ist allgemein in {PLZ} am günstigsten ?
+          var errorSpeechResponse = fuelkingHelper.validateFuelKingSlots(slots);
+          <span class="missing-if-branch" title="else path not taken" >E</span>if(errorSpeechResponse) {
+            returnResponse(fuelkingHelper.createAlexaSpeechJSON(true, errorSpeechResponse));
+            return;
+          }
+<span class="cstat-no" title="statement not covered" >          var zipcode = slots.zipcode.value;</span>
+&nbsp;
+          //if fueltype set to 'all' sort has to be set to 'dist' or left away
+<span class="cstat-no" title="statement not covered" >            fuelkingConnections.getBestFuelStationByZipcode(zipcode, 'all', 'dist', 2, <span class="fstat-no" title="function not covered" >function(fuelStation) {</span></span>
+<span class="cstat-no" title="statement not covered" >            responseSpeechJSON = fuelkingHelper.createAlexaSpeechJSON(true, 'Test name ' + fuelStation.name);</span>
+<span class="cstat-no" title="statement not covered" >            returnResponse(responseSpeechJSON);</span>
+          });
+<span class="cstat-no" title="statement not covered" >          break;</span>
+        case 'BestStationInZipForFuelType': //Wo ist {fuelType} in {zipcode} am günstigsten ?
+          var errorSpeechResponse = fuelkingHelper.validateFuelKingSlots(slots);
+          <span class="missing-if-branch" title="if path not taken" >I</span>if(errorSpeechResponse) {
+<span class="cstat-no" title="statement not covered" >            returnResponse(fuelkingHelper.createAlexaSpeechJSON(true, errorSpeechResponse));</span>
+<span class="cstat-no" title="statement not covered" >            return;</span>
+          }
+          var zipcode = slots.zipcode.value;
+          var fuelType = slots.fuelType.value;
+            fuelType = fuelkingHelper.getFuelTypeDataFormat(fuelType);
+            fuelkingConnections.getBestFuelStationByZipcode(zipcode, fuelType, 'dist', 2, function(fuelStation) {
+            responseSpeechJSON = fuelkingHelper.createAlexaSpeechJSON(true, 'Test name ' + fuelStation.name);
+            returnResponse(responseSpeechJSON);
+          });
+          break;
+     case 'BestStationInZipForFuelTypeInRadius': //Wo ist {fuelType} in {zipcode} im Umkreis von {radius} Kilometern am günstigsten?
+          var errorSpeechResponse = fuelkingHelper.validateFuelKingSlots(slots);
+          <span class="missing-if-branch" title="if path not taken" >I</span>if(errorSpeechResponse) {
+<span class="cstat-no" title="statement not covered" >            returnResponse(fuelkingHelper.createAlexaSpeechJSON(true, errorSpeechResponse));</span>
+<span class="cstat-no" title="statement not covered" >            return;</span>
+          }
+          var zipcode = slots.zipcode.value;
+          var fuelType = slots.fuelType.value;
+          var radius = slots.radius.value;
+            fuelType = fuelkingHelper.getFuelTypeDataFormat(fuelType);
+            fuelkingConnections.getBestFuelStationByZipcode(zipcode, fuelType, 'dist', 2, function(fuelStation) {
+            responseSpeechJSON = fuelkingHelper.createAlexaSpeechJSON(true, 'Test name ' + fuelStation.name);
+            returnResponse(responseSpeechJSON);
+          });
+          break;
+        default:
+          responseSpeechJSON = fuelkingHelper.createAlexaSpeechJSON(true, 'Ich habe dich nicht verstanden!');
+          returnResponse(responseSpeechJSON);
+      }
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Jun 08 2017 13:35:32 GMT+0200 (CEST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

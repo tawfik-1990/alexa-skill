@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for alexa-skill-fuelking/spec/fuelking-skill-spec.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">alexa-skill-fuelking/spec/</a> fuelking-skill-spec.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>21/21</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>8/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>21/21</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var fuelkingSkill = require('../js/fuelking-alexa-skill/fuelking-skill.js');
+&nbsp;
+var simpleIntentRequest = { "body": {
+    "session": {
+      "sessionId": "SessionId.7cd87411-433c-4fd0-9122-bfd7b3d2d19f",
+      "application": {
+        "applicationId": "amzn1.ask.skill.35e00a89-643b-4868-891e-62263d3e5196"
+      },
+      "attributes": {},
+      "user": {
+        "userId": "amzn1.ask.account.AGAVH7INLZ666RYHLESYHNZBIWLGEOG6FVTSBTBQPOUVOVQ4TOFZPJ2PX646LGT4CTGUMMZZFGQQMICVNXGXUMCHTQ6RLD2H5QPGC3AWKZ6MHKH47UZYHW34N6OI63BZ65UO4RI3GQMV36YWJHQNBRS4P4V4TFLYVW42BKZ52HCDU6ZJNSTRLMTDEOXFXVOG67GLYQAKYICVCMA"
+      },
+      "new": true
+      },
+      "request": {
+      "type": "IntentRequest",
+      "requestId": "EdwRequestId.f77c5a8d-1cb0-4e2c-bc78-369acbbe2560",
+      "locale": "de-DE",
+      "timestamp": "2017-05-28T10:24:18Z",
+      "intent": {
+        "name": "FuelKingTest",
+        "slots": {
+          "zipcode": {
+            "name": "zipcode",
+            "value": "46236"
+          },
+          "fuelType": {
+            "name": "fuelType"
+          }
+        }
+      }
+    },
+    "version": "1.0"
+  }
+};
+&nbsp;
+&nbsp;
+describe('Test if processAlexaRequest() of fuelking-skill works as expected', function() {
+  it('checks returning JSON with speech response for zipcode slot', function(done) {
+&nbsp;
+    fuelkingSkill.processAlexaRequest(simpleIntentRequest, function (speechResponse){
+          //expect(speechResponse.version).toBe('1.0');
+          //expect(speechResponse.response.outputSpeech.ssml).toBeDefined();
+          done();
+    });
+  });
+});
+&nbsp;
+describe('Test RequestType dellegation of processAlexaRequest()', function() {
+  it('checks for returning speech response on LaunchRequest', function(done) {
+    simpleIntentRequest.body.request.type = 'LaunchRequest';
+&nbsp;
+&nbsp;
+    fuelkingSkill.processAlexaRequest(simpleIntentRequest, function (speechResponse){
+          expect(speechResponse.version).toBe('1.0');
+          expect(speechResponse.response.outputSpeech.ssml).toBeDefined();
+          expect(speechResponse.response.outputSpeech.ssml).toBe('&lt;speak&gt;Fuel King sagt dir wo es den günstigsten Sprit gibt!&lt;/speak&gt;');
+          done();
+    });
+  });
+  it('checks for returning speech response on unknown request type', function(done) {
+    simpleIntentRequest.body.request.type = 'UnknownRequestTypeTest';
+&nbsp;
+&nbsp;
+    fuelkingSkill.processAlexaRequest(simpleIntentRequest, function(speechResponse){
+          expect(speechResponse.version).toBe('1.0');
+          expect(speechResponse.response.outputSpeech.ssml).toBeDefined();
+          expect(speechResponse.response.outputSpeech.ssml).toBe('&lt;speak&gt;Irgendetwas lief bei deiner Anfrage schief!&lt;/speak&gt;');
+          done();
+    });
+  });
+});
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Jun 08 2017 13:35:32 GMT+0200 (CEST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

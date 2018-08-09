@@ -1,0 +1,112 @@
+Website: https://developer.amazon.com/
+
+// 1-Skill Information
+Type : Custom
+Language : German
+Application Id : random
+Name : Alexa Skill Fuelking
+invocation Name : fuel king
+Global Fields-> Audio Player : No
+
+
+// 2-Interaction Model
+Intent Schema :
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "fuelType",
+          "type": "LIST_OF_TYPES"
+        }
+      ],
+      "intent": "fkFuelType"
+    },
+    {
+      "slots": [
+        {
+          "name": "fuelType",
+          "type": "LIST_OF_TYPES"
+        },
+        {
+          "name": "radius",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "fkFuelTypeRadius"
+    },
+    {
+      "slots": [
+        {
+          "name": "fuelType",
+          "type": "LIST_OF_TYPES"
+        },
+        {
+          "name": "zipcode",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "fkFuelTypePosition"
+    },
+    {
+      "slots": [
+        {
+          "name": "fuelType",
+          "type": "LIST_OF_TYPES"
+        },
+        {
+          "name": "zipcode",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "radius",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "fkFuelTypePositionRadius"
+    },{
+      "slots": [
+        {
+          "name": "zipcode",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "fkSetZipcode"
+    },
+     {
+      "slots": [
+        {
+          "name": "radius",
+          "type": "AMAZON.NUMBER"
+        }
+      ],
+      "intent": "fkSetRadius"
+    }
+  ]
+}
+
+Custom Slot Types : LIST_OF_TYPES	Super | Diesel | Super E10 | Super95 | E5
+Sample Utterances :
+fkFuelType wo ist {fuelType} am günstigsten
+
+fkFuelTypeRadius wo ist {fuelType} am günstigsten im Umkreis von {radius} Kilometern
+fkFuelTypeRadius wo ist {fuelType} im Umkreis von {radius} Kilometern am günstigsten
+
+fkFuelTypePosition wo ist {fuelType} in {zipcode} am günstigsten
+
+fkFuelTypePositionRadius wo ist {fuelType} in {zipcode} im Umkreis von {radius} Kilometern am günstigsten
+fkFuelTypePositionRadius wo ist {fuelType} im Umkreis von {radius} Kilometern um {zipcode} am günstigsten
+
+fkSetRadius setze den Radius auf {radius} Kilometer
+fkSetZipcode setze die Position auf {zipcode}
+
+// 3-Configuration
+Service Endpoint Type: HTTPS
+Geographical region: Europe
+URL : https://alexa-skill-fuelking.herokuapp.com/test (or own server)
+Account Linking : No
+Permissions: None
+
+
+// 4-SSL Certificate
+Certificate: Option 2 (Sub-Domain)
